@@ -1,24 +1,103 @@
-#ThisIsHeader{
-    text-align: center;
+
+/*--------------Header-----------*/
+#ThisIsHeader {
+  text-align: center;
+  background-color: #00FFFF; /* Aqua */
+  height: 70px;
+  width: 90%;
+  margin: 20px auto;
+  color: #333; /* Dark text for contrast */
+  font-family: 'Arial', sans-serif; /* Use a clean font */
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 70px; /* Vertically center text */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  border: 2px solid #007BFF; /* Add a solid border */
 }
 
 
+/*------------------Main---------------*/
 form {
-    max-width: 90%;
-    margin: auto;
-    padding: 20px;
+  max-width: 80%;
+  margin: auto;
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background for contrast */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  font-family: Arial, sans-serif;
 }
 
+/* Label styling */
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Select dropdown styling */
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+/* Textarea styling */
 textarea {
-    width: 100%; /* Makes the textarea take full width of its container */
-    height: 30vh; /* Height adjusts to 30% of the viewport height */
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    resize: both; /* Allows user to resize the textarea */
+  width: 100%;
+  height: 30vh;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  resize: both;
+  background-color: #fff;
+}
+
+/* File input styling */
+input[type="file"] {
+  margin-top: 10px;
+}
+
+/* Submit button styling */
+input[type="submit"] {
+  background-color: #007BFF;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Add some space between elements */
+form > * {
+  margin-bottom: 15px;
+}
+
+/* Ensures form responsiveness */
+@media (max-width: 768px) {
+  form {
+      width: 95%;
+  }
+
+  textarea {
+      height: 25vh;
+  }
 }
 
 
