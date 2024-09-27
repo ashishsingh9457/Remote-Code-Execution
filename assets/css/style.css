@@ -1,5 +1,28 @@
 /*--------------Header and Navbar-----------*/
+.btn-bd-primary {
+  --bd-violet-bg: #2863ee;
+  --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
 
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: var(--bs-white);
+  --bs-btn-bg: var(--bd-violet-bg);
+  --bs-btn-border-color: var(--bd-violet-bg);
+  --bs-btn-hover-color: var(--bs-white);
+  --bs-btn-hover-bg: #2863ee;
+  --bs-btn-hover-border-color: #2863ee;
+  --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+  --bs-btn-active-color: var(--bs-btn-hover-color);
+  --bs-btn-active-bg: #2344c8;
+  --bs-btn-active-border-color: #2344c8;
+}
+
+.bd-mode-toggle {
+  z-index: 1500;
+}
+
+.bd-mode-toggle .dropdown-menu .active .bi {
+  display: block !important;
+}
 /* Centered heading */
 #ThisIsHeader {
   color: #333;
@@ -19,9 +42,6 @@
   height: 50px;
   width: auto;
 }
-
-
-
 
 /*------------------Main---------------*/
 form {
