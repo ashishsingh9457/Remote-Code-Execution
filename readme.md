@@ -8,21 +8,6 @@ This project demonstrates a basic implementation of remote code execution. It al
 - Secure communication
 - Supports multiple programming languages
 
-## Installation
-
-1. Clone the repository:
-    ```sh
-    git clone https://github.com/yourusername/remote-code-execution.git
-    ```
-2. Navigate to the project directory:
-    ```sh
-    cd remote-code-execution
-    ```
-3. Install dependencies:
-    ```sh
-    npm install
-    ```
-
 ## Usage
 
 1. Start the server:
