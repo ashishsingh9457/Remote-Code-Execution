@@ -1,4 +1,5 @@
 /*--------------Header and Navbar-----------*/
+
 .btn-bd-primary {
   --bd-violet-bg: hsl(213, 96%, 48%);
   --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
@@ -23,6 +24,7 @@
 .bd-mode-toggle .dropdown-menu .active .bi {
   display: block !important;
 }
+
 /* Centered heading */
 #ThisIsHeader {
   color: #333;
@@ -200,4 +202,3 @@ footer {
       flex-direction: column;
     }
   }
-  
