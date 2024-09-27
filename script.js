@@ -18,3 +18,4 @@ function executeCode() {
         outputElement.textContent = 'Error executing code';
     });
 }
+
