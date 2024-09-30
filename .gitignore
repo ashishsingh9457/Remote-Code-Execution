@@ -1,4 +1,0 @@
-# Ignore filesand folder used for learning
-firebase-debug.log
-# Securely Using API keys And Firebase authentication
-.env

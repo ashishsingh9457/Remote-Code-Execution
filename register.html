@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./assets/images/rc.ico" type="image/x-icon">
+    <title>Register</title>
+    <link rel="icon" href="/images/rc.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script type="module" src="assets/js/register.js" defer></script>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gray-100">
+    <main class="w-full max-w-md p-8 bg-white rounded-lg shadow-lg">
+        <form>
+            <img class="mb-4 mx-auto" src="./assets/images/RCE.png" alt="Logo" width="67" height="63">
+            <h1 class="mb-6 text-3xl font-semibold text-center">Login</h1>
+
+            <div class="mb-4">
+                <label for="email" class="block mb-2 text-sm font-medium text-gray-700">Email address</label>
+                <input type="email" class="block w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-blue-500" id="email" placeholder="name@example.com">
+            </div>
+            <div class="mb-4">
+                <label for="password" class="block mb-2 text-sm font-medium text-gray-700">Password</label>
+                <input type="password" class="block w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-blue-500" id="password" placeholder="Password">
+            </div>
+
+            <!-- <div class="flex items-center mb-4">
+                <input class="mr-2" type="checkbox" value="remember-me" id="flexCheckDefault">
+                <label class="text-sm" for="flexCheckDefault">Remember me</label>
+            </div> -->
+            <button class="w-full py-2 mt-4 text-white bg-blue-600 rounded hover:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-300" type="submit" id="submit">Sign in</button>
+            <p class="mt-5 text-center text-gray-500">&copy; Aashish Pandey 2024</p>
+        </form>
+    </main>
+</body>
+</html>

@@ -1,7 +1,19 @@
-function displayText() {
-    // Get the input value from the first text box
-    var inputText = document.getElementById("code").value;
-    
-    // Set the value of the second text box to the input value
-    document.getElementById("input").value = inputText;
-}
+function runCode() {
+    // Simulating code execution for demo
+    var code = document.getElementById("code").value;
+    var input = document.getElementById("input").value;
+    var output;
+
+    // Basic mock logic for displaying output
+    if (code.includes("print") && input.trim() !== "") {
+      output = "Executed code with input: " + input;
+    } else {
+      output = "Code executed successfully!";
+    }
+
+    // Display the result in the output text area
+    document.getElementById("output").value = output;
+  }
+
+
+ 
