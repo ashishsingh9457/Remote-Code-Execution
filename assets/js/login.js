@@ -34,8 +34,15 @@
      const password = document.getElementById('password').value;
      signInWithEmailAndPassword(auth, email, password)
     .then((userCredential)=>{
-        const user = userCredential.user;
-        alert("Account Exists...")
+       // Output the userCredential object
+       console.log(userCredential); // Log the entire userCredential object to the console
+
+       const user = userCredential.user;
+       alert("Account Exists. UID: " + user.uid); // Alert with user UID or any specific detail
+
+       // You can also log specific parts of the userCredential object like:
+       console.log("User Email:", user.email);
+       console.log("Is New User:", userCredential.additionalUserInfo.isNewUser);
     })
     .catch((error)=>{
         const errorCode = error.code;
