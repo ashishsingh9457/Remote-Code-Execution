@@ -18,7 +18,7 @@ app.use(express.urlencoded({
 app.post('/exec-script', (req, res) => {
     const scriptContent = req.body.scriptContent;
     const lang = req.body.lang;
-    const input = req.body.input;
+    const input = req.body.input + '\n';
     let runner = ""
     let filename = ""
 
@@ -48,7 +48,7 @@ app.post('/exec-script', (req, res) => {
     child.stdin.write(input);
 
     child.stdout.on('data', (data) => {
-        res.write(`stdout: ${data}`);
+        res.write(data);
     });
 
     child.stderr.on('data', (data) => {
