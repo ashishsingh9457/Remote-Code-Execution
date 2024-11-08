@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="./assets/images/rc.ico" type="image/x-icon">
+        <title>Remote Code Execution</title>
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+    <body class="bg-gray-100 dark:bg-gray-600" class="light-mode"></body>
+    
+    <!---------------- Header / Navbar ------------->
+    <header>
+        <nav class="bg-gray-800 text-white px-5 py-3 border-b border-gray-700">
+            <div class="flex flex-col sm:flex-row justify-between items-center">
+                <a class="flex items-center mb-2 sm:mb-0" href="#">
+                    <img src="./assets/images/RCE.png" alt="Logo" width="25" height="25" class="mr-2">
+                    Remote Code Execution
+                </a>
+                <div class="space-x-4 flex items-center">
+                    <a class="text-white hover:text-gray-300" href="./login.html">Login</a>
+                    <a class="text-white hover:text-gray-300" href="./register.html">Register</a>
+                    <a href="https://aashishpandey.tech">
+                        <img src="./assets/images/buy_me_a_coffee.png" alt="BUY ME A COFFEE" width="25" height="25" title="Buy Me a Coffee" class="ml-4">
+                    </a>
+                    
+                    <!-- Light/Dark Mode Toggle Button
+                    <button id="theme-toggle"  class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:ring focus:ring-blue-500">
+                        Toggle Dark Mode
+                    </button> -->
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!---------------- Header / Navbar  ands here------------->
+    
+    
+    <!------------ Main Content ------------------->
+    <main class="container mx-auto mt-10 dark:bg-gray-600">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6  dark:bg-gray-600">
+            <!-- Left Section -->
+            <div class="bg-white dark:bg-gray-800 shadow-md rounded-lg p-6">
+                <div class="mb-4">
+                    <label for="language" class="block text-gray-700 dark:text-gray-300 font-bold mb-2">Select Language</label>
+                    <select id="language" class="w-full p-2 border border-gray-300 dark:border-gray-600 rounded bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-300">
+                        <option value="python">Python</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="cpp">C++</option>
+                        <option value="java">Java</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label for="code" class="block text-gray-700 dark:text-gray-300 font-bold mb-2">Code Editor</label>
+                    <textarea id="code" class="w-full p-2 border border-gray-300 dark:border-gray-600 rounded h-40 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-300" placeholder="# Enter your code here" oninput="updateLineNumbers()"></textarea>
+                    <button id="run"  onclick="runCode()" class="mt-4 w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 dark:bg-blue-700 dark:hover:bg-blue-800">Run</button>
+                </div>
+            </div>
+            
+            <!-- Right Section -->
+            <div class="bg-white dark:bg-gray-800 shadow-md rounded-lg p-6">
+                <div class="mb-4">
+                    <label for="input" class="block text-gray-700 dark:text-gray-300 font-bold mb-2">Enter Input (if needed)</label>
+                    <textarea id="input" class="w-full p-2 border border-gray-300 dark:border-gray-600 rounded h-20 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-300" placeholder="Enter input here"></textarea>
+                </div>
+                <div class="mb-4">
+                    <label for="output" class="block text-gray-700 dark:text-gray-300 font-bold mb-2">Output</label>
+                    <textarea id="output" class="w-full p-2 border border-gray-300 dark:border-gray-600 rounded h-20 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-300" placeholder="Output here" disabled></textarea>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!------------ Main Content ends here------------------->
+
+
+    <!-------------------- Footer -------------------->
+    <footer class="bg-gray-800 text-white mt-10 p-6">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+                <h3 class="font-bold text-lg">Quick Links</h3>
+                <ul class="mt-4 space-y-2">
+                    <li><a href="#home" class="hover:text-gray-400">Home</a></li>
+                    <li><a href="https://github.com/ashishsingh9457" target="_blank" class="hover:text-gray-400">Projects</a></li>
+                    <li><a href="#blog" class="hover:text-gray-400">Blog</a></li>
+                    <li><a href="mailto:ashishksingh9457@gmail.com" target="_blank" class="hover:text-gray-400">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold text-lg">Follow Me</h3>
+                <ul class="mt-4 space-x-4">
+                    <li><a href="https://github.com/ashishsingh9457" target="_blank" class="hover:text-gray-400">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/ashish-kumar-singh-a689a4208/" target="_blank" class="hover:text-gray-400">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mt-6 text-center">
+            <p>&copy; 2024 Ashish Kumar Singh | All Rights Reserved</p>
+        </div>
+    </footer>
+    <!-------------------- Footer ends here -------------------->
+
+
+    <!-- JS Scripts -->
+    <script src="./assets/js/script.js"></script>
+    </body>
+</html>
